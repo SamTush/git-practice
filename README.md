@@ -1,4 +1,4 @@
-# Git exercise 1
+# Git exercise 2 [module 1]
 
 In this project i practice Git and Github in a series from bundle 1 to bundle 6
 
