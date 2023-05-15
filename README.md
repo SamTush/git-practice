@@ -4,60 +4,66 @@ In this project i practice Git and Github in a series from bundle 1 to bundle 6
 
 ## In exercise 1, these are the commands used:
 
-- To initialize git:
+- Create home.html
 
 ```
-    git init
+    touch home.html
 ```
 
-- To rename main branch from master to main:
+- Stash save change in home.html:
 
 ```
-    git branch -m master main
+    git stash save
+```
+
+- Create about.html:
+
+``` 
+    touch about.html
 ```
 
 - Stash save change in about.html:
 
 ``` 
-    touch home.html
+    git stash save
+```
+- Create team.html:
+
+``` 
+    touch team.html
 ```
 
-- To stage changes and commit:
+- Restore changes of the about page:
 
+``` 
+    git stash pop stash@{1}
 ```
+
+- With the help of an index use stash pop bring back the home page changes:
+
+``` 
+    git stash pop stash@{0}
+```
+
+- Commit the current changes and push them:
+
+``` 
     git add .
-    git commit -m "Add home.html file"
+    git commit -m "Add home.html about.html and team.html"
+    git push upsteam origin feature/exercise-two
 ```
 
-- To connect github to the project:
+- Using stash pop restore the changes of the team page index:
 
 ``` 
-    git remote add origin https://github.com/SamTush/git-practice.git
+    git stash pop stash@{2}
 ```
 
-- To push to github:
+- Reset the current changes using git reset and go back to the changes without the team page:
 
 ``` 
-    git push -u origin main
+    git reset HEAD~
 ```
 
-- To create a new branch:
-
-```
-    git checkout -b dev
-```
-
-- To create another branch from dev:
-
-```
-    git checkout dev
-    git checkout -b test
-```
-
-- To delete the test branch:
-
-```
-    git branch -d test
-```
 
 ### Thank you for reviewing my exercise 
