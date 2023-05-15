@@ -16,7 +16,7 @@ In this project i practice Git and Github in a series from bundle 1 to bundle 6
     git branch -m master main
 ```
 
-- To add home.html file:
+- Stash save change in about.html:
 
 ``` 
     touch home.html
