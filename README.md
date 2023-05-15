@@ -50,7 +50,7 @@ In this project i practice Git and Github in a series from bundle 1 to bundle 6
 ``` 
     git add .
     git commit -m "Add home.html about.html and team.html"
-    git push upsteam origin feature/exercise-two
+    git push --up-steam origin feature/exercise-two
 ```
 
 - Using stash pop restore the changes of the team page index:
